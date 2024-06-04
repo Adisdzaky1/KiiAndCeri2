@@ -13,7 +13,7 @@
     },
     {
       "src": "/(.*)",
-      "dest": "/routes/main.js"
+      "dest": "/server.js"
     }
   ]
 }
