@@ -1596,7 +1596,7 @@ can.context.drawImage(bg, 320, 0, 709, 360)
 
 //―――――――――――――――――――――――――――――――――――――――――― ┏  Link Short  ┓ ―――――――――――――――――――――――――――――――――――――――――― \\
 
-router.get('/api/linkshort/tinyurl', cekKey, async (req, res, next) => {
+router.get('/api/linkshort/tinyurl', async (req, res, next) => {
 	var link = req.query.link
 	if (!link ) return res.json({ status : false, creator : `${creator}`, message : "[!] masukan parameter link"})  
 
@@ -1606,7 +1606,7 @@ router.get('/api/linkshort/tinyurl', cekKey, async (req, res, next) => {
 
 TinyURL.shorten(link, function(link, err) {
   if (err) return res.json(loghandler.error)
-  	limitapikey(req.query.apikey)
+  	//limitapikey(req.query.apikey)
 	res.json({
 		status: true,
 		creator: `${creator}`,
