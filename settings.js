@@ -21,7 +21,7 @@ const fs = require('fs')
 //_______________________ ┏  Main Setting  ┓ _______________________\\
 
 global.creator = '乂𝘼𝙡𝙞𝙥乂' // Nama 
-global.port = 8080 //port host
+global.port = 8000 //port host
 global.LimitApikey = 200 // Limit Apikey default
 
 //___________ ┏  Database Mongodb Setting  ┓ ___________\\
