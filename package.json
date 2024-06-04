@@ -10,8 +10,8 @@
     "lib": "lib"
   },
   "scripts": {
-    "start": "node server.js",
-    "node": "nodemon server.js"
+    "start": "node index.js",
+    "node": "nodemon index.js"
   },
   "repository": {
     "type": "git",
@@ -52,6 +52,7 @@
     "express-session": "^1.17.3",
     "form-data": "^4.0.0",
     "g-i-s": "^2.1.6",
+    "node-schedule": "^2.0.0",
     "generate-api-key": "^1.0.2",
     "google-it": "^1.6.4",
     "html-to-text": "^9.0.3",
